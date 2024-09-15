@@ -31,13 +31,13 @@ export default function ContactForm({ onAddBtn }) {
   };
 
   return (
-    <div>
+    
       <Formik
         initialValues={initialValues}
         validationSchema={FeedbackSchema}
         onSubmit={handleSubmite}
       >
-        <Form>
+        <Form className={css.container}>
           <label className={css.label} htmlFor={textId}>
             Name
           </label>
@@ -55,6 +55,6 @@ export default function ContactForm({ onAddBtn }) {
           </button>
         </Form>
       </Formik>
-    </div>
+   
   );
 }
