@@ -6,7 +6,7 @@ export default function Contact({ contact: { id, name, number }, onDelete }) {
   return (
     <div className={css.container}>
       <div className={css.contactList}>
-        <p>
+        <p className={css.contactText}>
           <IoPerson /> {name}
         </p>
         <p>
